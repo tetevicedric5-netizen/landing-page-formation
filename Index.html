@@ -1,0 +1,90 @@
+﻿2025-10-29 08:00:19> Program: Starting Squirrel Updater: --install .
+2025-10-29 08:00:24> Program: Starting install, writing to C:\ProgramData\user\SquirrelTemp
+2025-10-29 08:00:30> Program: About to install to: C:\ProgramData\user\vysor
+2025-10-29 08:00:30> Program: Install path C:\ProgramData\user\vysor already exists, burning it to the ground
+2025-10-29 08:00:48> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'C:\ProgramData\user\vysor\packages\.betaId'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   à System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   à System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   à Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2025-10-29 08:00:49> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'C:\ProgramData\user\vysor\packages\RELEASES'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   à Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   à Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2025-10-29 08:00:49> CheckForUpdateImpl: Reading RELEASES file from C:\ProgramData\user\SquirrelTemp
+2025-10-29 08:00:54> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2025-10-29 08:01:30> ApplyReleasesImpl: Writing files to app directory: C:\ProgramData\user\vysor\app-5.0.7
+2025-10-29 08:01:46> LogHost: Rigging execution stub for Vysor_ExecutionStub.exe to C:\ProgramData\user\vysor\Vysor.exe
+2025-10-29 08:02:44> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\ProgramData\user\vysor\app-5.0.7\Vysor.exe]
+2025-10-29 08:03:00> ApplyReleasesImpl: Couldn't run Squirrel hook, continuing: C:\ProgramData\user\vysor\app-5.0.7\Vysor.exe: System.OperationCanceledException: L'opération a été annulée.
+   à System.Threading.CancellationToken.ThrowOperationCanceledException()
+   à Squirrel.Utility.<>c__DisplayClass11_0.<InvokeProcessAsync>b__0()
+   à System.Threading.Tasks.Task.InnerInvoke()
+   à System.Threading.Tasks.Task.Execute()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à Squirrel.Utility.<InvokeProcessAsync>d__11.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à Squirrel.UpdateManager.ApplyReleasesImpl.<>c__DisplayClass10_0.<<invokePostInstall>b__0>d.MoveNext()
+2025-10-29 08:03:03> ApplyReleasesImpl: Starting fixPinnedExecutables
+2025-10-29 08:03:03> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2025-10-29 08:03:04> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2025-10-29 08:03:04> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2025-10-29 08:03:05> ApplyReleasesImpl: Examining Pin: YouTube.lnk
+2025-10-29 08:03:05> ApplyReleasesImpl: Fixing up tray icons
+2025-10-29 08:03:05> ApplyReleasesImpl: cleanDeadVersions: for version 5.0.7
+2025-10-29 08:03:05> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-5.0.7
+2025-11-14 08:21:17> Program: Starting Squirrel Updater: --install .
+2025-11-14 08:21:56> Program: Starting install, writing to C:\ProgramData\user\SquirrelTemp
+2025-11-14 08:22:26> Program: About to install to: C:\ProgramData\user\vysor
+2025-11-14 08:22:26> Program: Install path C:\ProgramData\user\vysor already exists, burning it to the ground
+2025-11-14 08:26:09> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'C:\ProgramData\user\vysor\packages\.betaId'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   à System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   à System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   à System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   à Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2025-11-14 08:26:09> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: Impossible de trouver une partie du chemin d'accès 'C:\ProgramData\user\vysor\packages\RELEASES'.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   à Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   à Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__2.MoveNext()
+2025-11-14 08:26:09> CheckForUpdateImpl: Reading RELEASES file from C:\ProgramData\user\SquirrelTemp
+2025-11-14 08:26:09> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2025-11-14 08:26:50> ApplyReleasesImpl: Writing files to app directory: C:\ProgramData\user\vysor\app-5.0.7
+2025-11-14 08:27:03> LogHost: Rigging execution stub for Vysor_ExecutionStub.exe to C:\ProgramData\user\vysor\Vysor.exe
+2025-11-14 08:27:17> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\ProgramData\user\vysor\app-5.0.7\Vysor.exe]
+2025-11-14 08:27:33> ApplyReleasesImpl: Couldn't run Squirrel hook, continuing: C:\ProgramData\user\vysor\app-5.0.7\Vysor.exe: System.OperationCanceledException: L'opération a été annulée.
+   à System.Threading.CancellationToken.ThrowOperationCanceledException()
+   à Squirrel.Utility.<>c__DisplayClass11_0.<InvokeProcessAsync>b__0()
+   à System.Threading.Tasks.Task.InnerInvoke()
+   à System.Threading.Tasks.Task.Execute()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à Squirrel.Utility.<InvokeProcessAsync>d__11.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à Squirrel.UpdateManager.ApplyReleasesImpl.<>c__DisplayClass10_0.<<invokePostInstall>b__0>d.MoveNext()
+2025-11-14 08:27:39> ApplyReleasesImpl: Starting fixPinnedExecutables
+2025-11-14 08:27:39> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+2025-11-14 08:27:39> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2025-11-14 08:27:40> ApplyReleasesImpl: Examining Pin: Microsoft Edge.lnk
+2025-11-14 08:27:40> ApplyReleasesImpl: Examining Pin: YouTube.lnk
+2025-11-14 08:27:40> ApplyReleasesImpl: Fixing up tray icons
+2025-11-14 08:27:40> ApplyReleasesImpl: cleanDeadVersions: for version 5.0.7
+2025-11-14 08:27:40> ApplyReleasesImpl: cleanDeadVersions: exclude folder app-5.0.7
