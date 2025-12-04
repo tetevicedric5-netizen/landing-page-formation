@@ -1,2 +1,2 @@
-# cedric-formation-debutant
+# formation-debutant-freelance
 Landing page professionnelle formation
